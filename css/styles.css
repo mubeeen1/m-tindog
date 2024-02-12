@@ -69,7 +69,7 @@ p {
         position: static;
         transform: rotate(0);
     }
-    #title{
+    .big-heading{
         text-align: center;
     }
 }
