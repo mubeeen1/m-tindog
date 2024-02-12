@@ -1,49 +1,43 @@
-h1 {
-    font-family: "Montserrat-black", sans-serif;
-    font-weight: 900;
-    color: #ffff;
-    font-size: 3rem;
-    line-height: 1.5;
-
-}
-h2{
+body{
     font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 3rem;
 }
-
-h3 {
+h1,h2,h3,h4,h5,h6{
     font-family: "Montserrat-bold", sans-serif;
     font-weight: 700;
-    font-size: 1.3rem;
-    line-height: 1;
-    padding-top: 7%;
 }
 
 p {
     color: #8f8f8f;
 }
-
+/* Title Section  */
 #title {
     background-color: #FF4C68;
     font-family: "Montserrat-black", sans-serif;
 }
 
+.big-heading{
+    font-family: "Montserrat-black", sans-serif;
+    font-weight: 900;
+    color: #ffff;
+    font-size: 3rem;
+    line-height: 1.5;
+}
 .container-fluid {
     padding: 3% 15%;
     padding-bottom: 130px;
 }
 
-.margin {
-    margin-left: auto;
-}
 
 .btn-m {
     margin: 6% 4%;
 }
-
+/* Navbar Section  */
 .navbar {
-    padding: 0 4.5 0 4.5rem;
+    padding-right: 4.5rem;
+}
+/* Shifting nav-items to the right  */
+.margin {
+    margin-left: auto;
 }
 
 .navbar-brand {
@@ -68,19 +62,35 @@ p {
     padding: 2%;
     right: 22%;
 }
-
+/* Media query to make the phone-img responsive for smaller viewports  */
+@media (max-width:992px){
+    .phone-img{
+        width: 60%;
+        position: static;
+        transform: rotate(0);
+    }
+    #title{
+        text-align: center;
+    }
+}
+/* Features Section  */
 #features {
     padding: 7% 15%;
     background-color: #ffff;
     position: relative;
     z-index: 1;
 }
-
+.feature-text{
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1;
+    padding-top: 7%;
+}
 .feature-box {
     text-align: center;
     margin: 4%;
 }
-
+/* Giving icons a different color for each state */
 .icon {
     color: #ef8172;
 }
@@ -88,6 +98,7 @@ p {
 .icon:hover {
     color: #FF4C68;
 }
+/* Testimonial Section  */
 #testimonials{
     text-align: center;
     background-color: #ef8172;
@@ -106,6 +117,7 @@ p {
 .carousel-item{
     padding: 7% 15%;
 }
+/* Press Section  */
 #press{
     background-color: #ef8172;
     text-align: center;
@@ -115,6 +127,7 @@ p {
     width: 15%;
     padding: 20px 20px 50px;
 }
+/* Pricing Section  */
 #pricing{
     margin: 40px;
     text-align: center;
@@ -122,36 +135,32 @@ p {
 .pricing-cards{
     margin: 4%;
 }
-@media (max-width:992px){
-    .phone-img{
-        width: 60%;
-        position: static;
-        transform: rotate(0);
-    }
-    #title{
-        text-align: center;
-    }
+.pricing-header{
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1;
+    padding-top: 7%;
 }
+.pricing-text{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+}
+/* Call to action section  */
 #cta{
     background-color: #FF4C68;
     text-align: center;
     padding: 4% 10%;
 }
-#cta h3{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 900;
-    font-size: 3.5rem;
-    color: #ffff;
-}
+/* Footer Section  */
 #footer{
     text-align: center;
     padding: 7% 15%;
 }
 .f-ico{
-    padding: 0 1%;
+    padding-left: 1.5% ;
 }
 #footer p{
-    color: #8f8f8f;
     font-family: "Ubuntu", sans-serif;
     font-weight: light;
     font-size: 1rem;
